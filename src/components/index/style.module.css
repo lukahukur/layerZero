@@ -127,6 +127,9 @@
 .section5 li {
   @apply flex items-center lg:pl-36 justify-start md:text-[22px];
 }
+.section5 li a {
+  @apply flex items-center justify-center;
+}
 .section5 div div div {
   @apply xl:text-[20px] text-[15px];
 }

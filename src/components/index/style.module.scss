@@ -155,6 +155,9 @@
   li {
     @apply flex items-center lg:pl-36 justify-start md:text-[22px];
   }
+  li a {
+    @apply flex items-center justify-center;
+  }
 
   // last footer
   div div div {

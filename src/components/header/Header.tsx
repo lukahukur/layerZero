@@ -31,14 +31,14 @@ const Header = () => {
       className={
         'text-white flex items-center font-RobotoMono justify-start p-7 md:pl-20 pl-10 text-sm '
       }>
-      <div className={'font-light flex items-center text-[18px] font-Roboto fixed z-10s'}>
+      <div className={'font-light flex items-center text-[18px] font-Roboto fixed z-10'}>
         <img width={'35px'} src={Logo} alt={'logo'} />
         <p>&nbsp;DogeGPT</p>
       </div>
       <nav
-        className={`w-full h-full items-center xl:items-start -ml-7 -mt-7 xl:ml-0 ${
-          showDropDown ? 'flex' : 'hidden'
-        } xl:flex xl:mt-0 xl:static fixed w-full xl:justify-center xl:bg-transparent bg-black`}>
+        className={`transition all w-full flex items-center xl:items-start mt-[690px] -ml-10 xl:ml-0 ${
+          showDropDown ? 'h-[110vh] opacity-100' : 'opacity-0'
+        } xl:flex xl:mt-0 h-full xl:opacity-100 xl:static fixed w-full xl:justify-center xl:bg-transparent bg-black`}>
         <div
           className={
             'xl:w-[1000px] xl:ml-0 ml-8 xl:text-base w-[200px] text-[18px] h-72 xl:h-fit flex justify-between flex-col xl:flex-row'

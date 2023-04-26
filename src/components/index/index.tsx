@@ -31,7 +31,7 @@ const Main = () => {
               className={
                 'font-RobotoMono  flex flex-col items-end xl:px-40 md:px-24   text-justify'
               }>
-              <p>INTRODUCING DOGEGPT UNLEASHING THE COSMIC</p>
+              <p>INTRODUCING DOGEGPT</p>
               <span className={'mt-4'}>
                 <p>
                   POWER OF MEME MAGIC AND CUTTING-EDGE AI, DOGEGPT IS SET TO REVOLUTIONIZE THE DEFI
@@ -137,28 +137,40 @@ const Main = () => {
           <section className={'w-[85%]'}>
             <ul className={'grid 2xl:grid-cols-3 grid-cols-2 h-[400px]'}>
               <li>
-                <img src={Star} alt="star" />
-                <h2>INTRODUCTION</h2>
+                <Link to={'/'}>
+                  <img src={Star} alt="star" />
+                  <h2>INTRODUCTION</h2>
+                </Link>
               </li>
               <li>
-                <img src={Braces} alt="braces" />
-                <h2>DogeGPT(CCS)</h2>
+                <Link to={'/'}>
+                  <img src={Braces} alt="braces" />
+                  <h2>DogeGPT(CCS)</h2>
+                </Link>
               </li>
               <li>
-                <img src={Crosshair} alt="crosshair" />
-                <h2>Tokenomics</h2>
+                <Link to={'/'}>
+                  <img src={Crosshair} alt="crosshair" />
+                  <h2>Tokenomics</h2>
+                </Link>
               </li>
               <li>
-                <img src={Star} alt="crosshair" />
-                <h2>Roadmap</h2>
+                <Link to={'/'}>
+                  <img src={Star} alt="crosshair" />
+                  <h2>Roadmap</h2>
+                </Link>
               </li>
               <li>
-                <img src={Braces} alt="crosshair" />
-                <h2>Team/Advisor</h2>
+                <Link to={'/'}>
+                  <img src={Braces} alt="crosshair" />
+                  <h2>Team/Advisor</h2>
+                </Link>
               </li>
               <li>
-                <img src={Crosshair} alt="crosshair" />
-                <h2>Legal Compliance</h2>
+                <Link to={'/'}>
+                  <img src={Crosshair} alt="crosshair" />
+                  <h2>Legal Compliance</h2>
+                </Link>
               </li>
             </ul>
           </section>
