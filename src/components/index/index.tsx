@@ -40,7 +40,7 @@ const Main = () => {
         </div>
         <div className={'flex flex-col font-RobotoMono'}>
           <div className={'text-black  flex justify-center'}>
-            <div className={'bg-white h-14 w-96 font-bold flex items-center justify-center'}>
+            <div className={'bg-white h-14 w-96 font-bold flex items-center justify-center mt-12'}>
               <Link to={'dogegpt'}>DEVELOP WITH DOGEGPT</Link>
             </div>
           </div>
