@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 .section1 {
   h1 p{
-    @apply text-[96px] font-[600] font-Roboto leading-[112px];
+    @apply text-[96px] font-[600]  font-Roboto leading-[112px];
   }
   h1 p:nth-child(2){
     @apply pl-[200px];
@@ -58,4 +60,92 @@
   }
 
   @apply text-white h-screen flex flex-col justify-center items-center font-Roboto;
+}
+
+.layers {
+  div{
+    @apply border h-[537px] absolute w-[1000px] z-50 m-auto bg-black;
+  }
+
+  div:nth-child(1){
+    p:nth-child(1){
+      font-family: 'Inter', sans-serif;
+
+    }
+    @apply z-10 bg-black pt-6 pl-10 pr-10;
+  }
+
+  ul{
+    @apply list-disc;
+    li{
+      @apply mt-4 list-disc font-RobotoMono;
+    }
+  }
+
+  div:nth-child(2){
+    @apply ml-2 mt-2 -z-[10];
+  }
+  div:nth-child(3){
+    @apply ml-4 mt-4 -z-20 ;
+  }
+
+  @apply h-screen flex items-center justify-center;
+}
+
+.section4 {
+  nav{
+    @apply border-t border-zinc-700 flex items-center w-[85%] h-14 font-RobotoMono;
+
+    ul{
+      @apply flex px-20 w-full justify-between;
+    }
+  }
+  section {
+    @apply  w-[1000px] mt-40;
+  }
+  section div div:nth-child(2){
+    @apply flex items-center justify-center font-[600] bg-white mt-10 h-14 text-black font-RobotoMono;
+  }
+   h2 {
+     @apply font-[600] text-[54px] leading-[63px] mb-14;
+   }
+  li:nth-child(3){
+    @apply border-b border-zinc-700;
+  }
+
+    li{
+      div{
+        font-family: 'Inter', sans-serif;
+        @apply text-neutral-600 text-[20px] mr-10;
+      }
+      @apply flex text-[36px] h-16 items-center border-t border-zinc-700;
+    }
+
+
+  @apply h-screen text-white font-Roboto flex flex-col
+          items-center justify-between  text-white
+  ;
+}
+
+.section5{
+  img{
+   @apply w-[40px] h-[40px] mr-4;
+  }
+
+  section {
+    @apply w-[1000px] ml-96 mt-16;
+  }
+  div div{
+    @apply flex items-center text-[24px];
+  }
+
+  div div div {
+    @apply text-[20px];
+  }
+
+  div div div div{
+    @apply text-[14px] w-40 ;
+  }
+
+  @apply h-screen justify-between text-white font-Roboto flex flex-col items-start;
 }

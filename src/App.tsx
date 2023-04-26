@@ -5,7 +5,7 @@ import Header from './components/header/Header'
 function App() {
   return (
     <>
-      <span className={'fixed w-full'}>
+      <span className={'fixed w-full z-[100000]'}>
         <Header />
       </span>
       <Routes>
