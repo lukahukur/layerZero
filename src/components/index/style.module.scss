@@ -16,7 +16,7 @@
 
 .section2 {
   h2 {
-    @apply text-[50px] leading-[59px] ;
+    @apply text-[50px] leading-[59px] font-[600];
   }
 
   div{
@@ -36,4 +36,26 @@
   }
 
   @apply text-white h-screen flex flex-col justify-center items-center;
+}
+
+.section3 {
+  div:nth-child(1){
+    @apply w-[450px];
+  }
+  span{
+    @apply flex justify-between;
+  }
+
+  section {
+    @apply w-[1000px];
+  }
+  p{
+    @apply font-RobotoMono text-[20px];
+  }
+
+  h2 {
+  @apply leading-[127px] font-[600] text-[108px];
+  }
+
+  @apply text-white h-screen flex flex-col justify-center items-center font-Roboto;
 }

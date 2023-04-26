@@ -12,7 +12,7 @@ const Main = () => {
             <h1>
               <p>Content</p>
               <p>Creation</p>
-              <p>Suite (CSS)</p>
+              <p>Suite (CCS)</p>
             </h1>
             <div className={'font-RobotoMono  flex flex-col items-end px-40 text-justify'}>
               <p>INTRODUCING DOGEGPT UNLEASHING THE COSMIC</p>
@@ -51,6 +51,30 @@ const Main = () => {
               optimized templates through simple promptinputs. By combining the power of AI with
               user-friendly tools, DogeGPT aims to revolutionize  content creation for DeFi projects
               and streamline their marketing efforts.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div className={styles.section3}>
+        <section>
+          <div>
+            <span>
+              <p>Decentralized</p> <p>-</p> <p>TRUSTLESS,</p>
+            </span>
+            <span>
+              <p>CSS</p> <p>INTEROPERABILITY</p>
+            </span>
+          </div>
+
+          <div className={'mt-1 mb-3'}>
+            <h2>Developing  DogeGPT</h2>
+          </div>
+          <div>
+            <p>
+              DogeGPT is built using a combination of Solidity, JavaScript  (including React and
+              Vue.js),Python (including TensorFlow and PyTorch),  HTML/CSS, Web3.js, and Node.js to
+              create apowerful and user-friendly  content creation suite that leverages AI
+              technology to revolutionize  marketing efforts in the DeFi space
             </p>
           </div>
         </section>

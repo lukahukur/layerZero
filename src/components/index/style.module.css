@@ -18,7 +18,7 @@
   @apply text-white h-screen flex flex-col justify-center items-center;
 }
 .section2 h2 {
-  @apply text-[50px] leading-[59px];
+  @apply text-[50px] leading-[59px] font-[600];
 }
 .section2 div {
   @apply mt-4;
@@ -31,6 +31,25 @@
 }
 .section2 span {
   @apply w-96 block;
+}
+
+.section3 {
+  @apply text-white h-screen flex flex-col justify-center items-center font-Roboto;
+}
+.section3 div:nth-child(1) {
+  @apply w-[450px];
+}
+.section3 span {
+  @apply flex justify-between;
+}
+.section3 section {
+  @apply w-[1000px];
+}
+.section3 p {
+  @apply font-RobotoMono text-[20px];
+}
+.section3 h2 {
+  @apply leading-[127px] font-[600] text-[108px];
 }
 
 /*# sourceMappingURL=style.module.css.map */
