@@ -3,32 +3,42 @@
   @apply h-full flex flex-col items-center;
 }
 .section1 h1 p {
-  @apply text-[96px] font-[600]  font-Roboto leading-[112px];
+  @apply xl:text-[96px] md:text-[60px]  font-[600] text-[55px]
+           font-Roboto xl:leading-[112px] md:leading-[60px] leading-[48px];
+}
+.section1 h1 p:nth-child(1) {
+  @apply sm:-ml-2;
 }
 .section1 h1 p:nth-child(2) {
-  @apply pl-[200px];
+  @apply xl:pl-[200px] md:pl-[130px] sm:pl-[100px] pl-[20px];
 }
 .section1 h1 p:nth-child(3) {
-  @apply pl-[400px];
+  @apply xl:pl-[400px] md:pl-[250px] sm:pl-[150px] pl-[40px];
+}
+.section1 h1 {
+  @apply xl:mb-0 mb-4;
+}
+.section1 div p {
+  @apply xl:text-base text-xs;
 }
 .section1 section {
-  @apply w-[1000px] mt-20;
+  @apply xl:w-[1000px] xl:max-w-full max-w-[700px] mt-20 w-[90%] xl:block flex flex-col items-center;
 }
 
 .section2 {
   @apply text-white h-screen flex flex-col justify-center items-center;
 }
 .section2 h2 {
-  @apply text-[50px] leading-[59px] font-[600];
+  @apply text-[40px] leading-[44px] xl:text-[50px]  xl:leading-[59px] font-[600];
 }
 .section2 div {
   @apply mt-4;
 }
 .section2 p {
-  @apply font-RobotoMono text-[20px];
+  @apply font-RobotoMono xl:text-[20px] text-base;
 }
 .section2 section {
-  @apply w-[1000px] font-Roboto;
+  @apply xl:w-[1000px] w-[80%]  font-Roboto;
 }
 .section2 span {
   @apply w-96 block;
@@ -41,26 +51,26 @@
   @apply w-[450px];
 }
 .section3 span {
-  @apply flex justify-between;
+  @apply flex justify-between w-[300px] xl:w-auto;
 }
 .section3 section {
-  @apply w-[1000px];
+  @apply xl:w-[1000px] w-[80%];
 }
 .section3 p {
-  @apply font-RobotoMono text-[20px];
+  @apply font-RobotoMono xl:text-[20px] text-base;
 }
 .section3 h2 {
-  @apply leading-[127px] font-[600] text-[108px];
+  @apply xl:leading-[127px] font-[600] xl:text-[108px]  text-[70px];
 }
 
 .layers {
   @apply h-screen flex items-center justify-center;
 }
 .layers div {
-  @apply border h-[537px] absolute w-[1000px] z-50 m-auto bg-black;
+  @apply border xl:h-[537px] sm:h-[700px] h-[850px]  absolute xl:w-[1000px] w-[95%] z-50 m-auto bg-black;
 }
 .layers div:nth-child(1) {
-  @apply z-10 bg-black pt-6 pl-10 pr-10;
+  @apply z-10 bg-black pt-6 pl-10 xl:pr-14 pr-14 text-sm text-xs sm:text-sm md:text-base;
 }
 .layers div:nth-child(1) p:nth-child(1) {
   font-family: "Inter", sans-serif;
@@ -86,45 +96,46 @@
   @apply border-t border-zinc-700 flex items-center w-[85%] h-14 font-RobotoMono;
 }
 .section4 nav ul {
-  @apply flex px-20 w-full justify-between;
+  @apply md:flex text-sm  grid grid-cols-3 mt-6 md:mt-0 xl:px-20 w-full justify-between;
 }
 .section4 section {
-  @apply w-[1000px] mt-40;
+  @apply xl:w-[1000px] w-[80%] mt-40;
 }
 .section4 section div div:nth-child(2) {
   @apply flex items-center justify-center font-[600] bg-white mt-10 h-14 text-black font-RobotoMono;
 }
 .section4 h2 {
-  @apply font-[600] text-[54px] leading-[63px] mb-14;
+  @apply font-[600] xl:text-[54px] xl:leading-[63px] text-[40px] xl:mb-14 mb-10;
 }
 .section4 li:nth-child(3) {
   @apply border-b border-zinc-700;
 }
 .section4 li {
-  @apply flex text-[36px] h-16 items-center border-t border-zinc-700;
+  @apply flex xl:text-[36px] text-[25px] h-16 items-center border-t border-zinc-700;
 }
 .section4 li div {
   font-family: "Inter", sans-serif;
-  @apply text-neutral-600 text-[20px] mr-10;
+  @apply text-neutral-600 xl:text-[20px] text-[18px] mr-10;
 }
 
 .section5 {
-  @apply h-screen justify-between text-white font-Roboto flex flex-col items-start;
+  @apply h-screen  justify-between text-white font-Roboto flex flex-col items-start;
 }
 .section5 img {
-  @apply w-[40px] h-[40px] mr-4;
+  @apply xl:w-[40px] xl:h-[40px] w-[20px] h-[20px] xl:mr-4 mr-2;
 }
 .section5 section {
-  @apply w-[1000px] ml-96 mt-16;
+  @apply xl:ml-60 xl:mt-16 md:ml-20 xl:w-[1000px] w-[90%]
+           md:block flex items-center justify-center;
 }
 .section5 div div {
-  @apply flex items-center text-[24px];
+  @apply flex items-center xl:text-[24px] md:text-[20px];
 }
 .section5 div div div {
-  @apply text-[20px];
+  @apply xl:text-[20px] text-[15px];
 }
 .section5 div div div div {
-  @apply text-[14px] w-40;
+  @apply text-[14px] xl:w-40 w-fit xl:mr-0 mr-6 text-xs;
 }
 
 /*# sourceMappingURL=style.module.css.map */

@@ -26,7 +26,10 @@ const Main = () => {
               <p>Creation</p>
               <p>Suite (CCS)</p>
             </h1>
-            <div className={'font-RobotoMono  flex flex-col items-end px-40 text-justify'}>
+            <div
+              className={
+                'font-RobotoMono  flex flex-col items-end xl:px-40 md:px-24 sm:px-20 px-10 text-justify'
+              }>
               <p>INTRODUCING DOGEGPT UNLEASHING THE COSMIC</p>
               <span className={'mt-4'}>
                 <p>
@@ -40,11 +43,14 @@ const Main = () => {
         </div>
         <div className={'flex flex-col font-RobotoMono'}>
           <div className={'text-black  flex justify-center'}>
-            <div className={'bg-white h-14 w-96 font-bold flex items-center justify-center mt-12'}>
+            <div
+              className={
+                'bg-white w-[80%] text-[12px] xl:text-base h-14 lg:w-96 font-bold flex items-center justify-center mb-1 xl:mb-0 xl:mt-12'
+              }>
               <Link to={'dogegpt'}>DEVELOP WITH DOGEGPT</Link>
             </div>
           </div>
-          <div className={'h-14 flex items-center justify-center'}>
+          <div className={'h-14 xl:text-base text-[12px] flex  items-center justify-center'}>
             <Link to={'dogegpt'}>{'</A>'} WHITEPAPER</Link>
           </div>
         </div>
@@ -128,7 +134,7 @@ const Main = () => {
       </div>
       <div className={styles.section5}>
         <section>
-          <div className={'grid  grid-cols-3 h-[400px] '}>
+          <div className={'grid 2xl:grid-cols-3 grid-cols-2 h-[400px]'}>
             <div>
               <img src={Star} alt="star" />
               <h2>INTRODUCTION</h2>
@@ -168,7 +174,7 @@ const Main = () => {
               @{new Date().getFullYear()} <p>&nbsp; DogeGPT</p>
             </div>
             <div>
-              <img src={Msg} />
+              <img src={Msg} alt={'message icon'} />
               <p> Contact Us</p>
             </div>
             <div>Logo</div>
@@ -183,6 +189,16 @@ const Layers = () => {
   return (
     <div className={styles.layers}>
       <div>
+        <span
+          className={
+            'sticky z-[1000] -mb-16 h-[44px] w-fit h-fit block left-[100%] bottom-[460px]'
+          }>
+          <span className="border relative xl:w-[35px] xl:h-[39px] w-[30px] h-[34px] border block bg-black left-11" />
+          <span
+            className="border relative xl:w-[35px] xl:h-[39px] w-[30px] h-[35px] border block
+                           bg-black xl:bottom-12 xl:right-4 bottom-10 left-9"
+          />
+        </span>
         <p>
           To build the DogeGPT platform, we have used a combination of coding languages and
           frameworks, including
@@ -214,13 +230,6 @@ const Layers = () => {
              We will be using Node.js to develop and deploy the back-end of the DogeGPT platform.
           </li>
         </ul>
-        <span
-          className={
-            'relative h-[44px] z-50 w-fit h-fit block bg-black left-[910px] bottom-[460px]'
-          }>
-          <span className="border relative w-[35px] h-[39px] border block bg-black" />
-          <span className="border relative w-[35px] h-[39px] border block  bg-black bottom-12 right-2" />
-        </span>
       </div>
       <div />
       <div />
