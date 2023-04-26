@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
+import Logo from '../../assets/logo.png'
 
 const routes: { name: string; path: string }[] = [
   { name: 'HOME', path: '/' },
@@ -26,8 +27,14 @@ const Header = () => {
       </Link>
     ))
   return (
-    <header className={'text-white flex  font-RobotoMono justify-start p-7 text-sm '}>
-      <div className={'font-light fixed z-10'}>LOGO</div>
+    <header
+      className={
+        'text-white flex items-center font-RobotoMono justify-start p-7 md:pl-20 pl-10 text-sm '
+      }>
+      <div className={'font-light flex items-center text-[18px] font-Roboto fixed z-10s'}>
+        <img width={'35px'} src={Logo} alt={'logo'} />
+        <p>&nbsp;DogeGPT</p>
+      </div>
       <nav
         className={`w-full h-full items-center xl:items-start -ml-7 -mt-7 xl:ml-0 ${
           showDropDown ? 'flex' : 'hidden'

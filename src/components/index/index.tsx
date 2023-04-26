@@ -5,6 +5,7 @@ import Star from '../../assets/star.svg'
 import Crosshair from '../../assets/crosshair.svg'
 import Braces from '../../assets/braces.svg'
 import Msg from '../../assets/msg.png'
+import Logo from '../../assets/logo.png'
 
 const links: { name: string; link: string }[] = [
   { name: 'TELEGRAM', link: '/' },
@@ -28,7 +29,7 @@ const Main = () => {
             </h1>
             <div
               className={
-                'font-RobotoMono  flex flex-col items-end xl:px-40 md:px-24 sm:px-20 px-10 text-justify'
+                'font-RobotoMono  flex flex-col items-end xl:px-40 md:px-24   text-justify'
               }>
               <p>INTRODUCING DOGEGPT UNLEASHING THE COSMIC</p>
               <span className={'mt-4'}>
@@ -57,9 +58,8 @@ const Main = () => {
       </main>
       <div className={styles.section2}>
         <section>
-          <span>
-            <h2>Core Concept of DogeGPT</h2>
-          </span>
+          <h2>Core Concept of DogeGPT</h2>
+
           <div>
             <p>
               DogeGPT is a groundbreaking content creation platform tailored to the
@@ -133,35 +133,38 @@ const Main = () => {
         </nav>
       </div>
       <div className={styles.section5}>
-        <section>
-          <div className={'grid 2xl:grid-cols-3 grid-cols-2 h-[400px]'}>
-            <div>
-              <img src={Star} alt="star" />
-              <h2>INTRODUCTION</h2>
-            </div>
-            <div>
-              <img src={Braces} alt="braces" />
-              <h2>DogeGPT(CCS)</h2>
-            </div>
-            <div>
-              <img src={Crosshair} alt="crosshair" />
-              <h2>Tokenomics</h2>
-            </div>
-            <div>
-              <img src={Star} alt="crosshair" />
-              <h2>Roadmap</h2>
-            </div>
-            <div>
-              <img src={Braces} alt="crosshair" />
-              <h2>Team/Advisor</h2>
-            </div>
-            <div>
-              <img src={Crosshair} alt="crosshair" />
-              <h2>Legal Compliance</h2>
-            </div>
-          </div>
-        </section>
-        <div className={'flex flex-col items-center w-full h-96'}>
+        <div className={'w-full flex items-center justify-center xl:ml-30'}>
+          <section className={'w-[85%]'}>
+            <ul className={'grid 2xl:grid-cols-3 grid-cols-2 h-[400px]'}>
+              <li>
+                <img src={Star} alt="star" />
+                <h2>INTRODUCTION</h2>
+              </li>
+              <li>
+                <img src={Braces} alt="braces" />
+                <h2>DogeGPT(CCS)</h2>
+              </li>
+              <li>
+                <img src={Crosshair} alt="crosshair" />
+                <h2>Tokenomics</h2>
+              </li>
+              <li>
+                <img src={Star} alt="crosshair" />
+                <h2>Roadmap</h2>
+              </li>
+              <li>
+                <img src={Braces} alt="crosshair" />
+                <h2>Team/Advisor</h2>
+              </li>
+              <li>
+                <img src={Crosshair} alt="crosshair" />
+                <h2>Legal Compliance</h2>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div className={'flex flex-col items-center w-full h-32'}>
           <div className={'border-b border-zinc-700 w-[85%] font-RobotoMono justify-end'}>
             <div className={'mb-2'}>
               <div>Terms Of Use</div>
@@ -177,7 +180,9 @@ const Main = () => {
               <img src={Msg} alt={'message icon'} />
               <p> Contact Us</p>
             </div>
-            <div>Logo</div>
+            <div>
+              <img src={Logo} alt="Logo" />
+            </div>
           </div>
         </div>
       </div>
