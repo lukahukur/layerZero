@@ -38,7 +38,7 @@ const Header = () => {
       <nav
         className={`transition all w-full flex items-center xl:items-start mt-[690px] -ml-10 xl:ml-0 ${
           showDropDown ? 'h-[110vh] opacity-100' : 'opacity-0'
-        } xl:flex xl:mt-0 h-full xl:opacity-100 xl:static fixed w-full xl:justify-center xl:bg-transparent bg-black`}>
+        } xl:flex xl:mt-0 xl:h-full xl:opacity-100 xl:static fixed w-full xl:justify-center xl:bg-transparent bg-black`}>
         <div
           className={
             'xl:w-[1000px] xl:ml-0 ml-8 xl:text-base w-[200px] text-[18px] h-72 xl:h-fit flex justify-between flex-col xl:flex-row'
