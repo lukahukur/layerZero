@@ -1,4 +1,4 @@
-.words {
+.section1 {
   h1 p{
     @apply text-[96px] font-[600] font-Roboto leading-[112px];
   }
@@ -12,4 +12,28 @@
     @apply  w-[1000px] mt-20;
   }
   @apply  h-full flex flex-col items-center;
+}
+
+.section2 {
+  h2 {
+    @apply text-[50px] leading-[59px] ;
+  }
+
+  div{
+    @apply mt-4;
+  }
+
+  p{
+    @apply font-RobotoMono text-[20px];
+  }
+
+  section {
+    @apply  w-[1000px] font-Roboto;
+  }
+
+  span {
+    @apply  w-96 block;
+  }
+
+  @apply text-white h-screen flex flex-col justify-center items-center;
 }

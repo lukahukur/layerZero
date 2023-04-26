@@ -1,17 +1,36 @@
-.words {
+.section1 {
   @apply h-full flex flex-col items-center;
 }
-.words h1 p {
+.section1 h1 p {
   @apply text-[96px] font-[600] font-Roboto leading-[112px];
 }
-.words h1 p:nth-child(2) {
+.section1 h1 p:nth-child(2) {
   @apply pl-[200px];
 }
-.words h1 p:nth-child(3) {
+.section1 h1 p:nth-child(3) {
   @apply pl-[400px];
 }
-.words section {
+.section1 section {
   @apply w-[1000px] mt-20;
+}
+
+.section2 {
+  @apply text-white h-screen flex flex-col justify-center items-center;
+}
+.section2 h2 {
+  @apply text-[50px] leading-[59px];
+}
+.section2 div {
+  @apply mt-4;
+}
+.section2 p {
+  @apply font-RobotoMono text-[20px];
+}
+.section2 section {
+  @apply w-[1000px] font-Roboto;
+}
+.section2 span {
+  @apply w-96 block;
 }
 
 /*# sourceMappingURL=style.module.css.map */

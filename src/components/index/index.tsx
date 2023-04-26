@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div>
       <main className={'h-screen text-white pt-14 font-Roboto flex flex-col justify-between'}>
-        <div className={styles.words}>
+        <div className={styles.section1}>
           <section>
             <h1>
               <p>Content</p>
@@ -37,6 +37,24 @@ const Main = () => {
           </div>
         </div>
       </main>
+      <div className={styles.section2}>
+        <section>
+          <span>
+            <h2>Core Concept of DogeGPT</h2>
+          </span>
+          <div>
+            <p>
+              DogeGPT is a groundbreaking content creation platform tailored to the
+              DeFi community,which leverages state-of-the-art AI technology to generate high-quality
+              marketing materials with ease. The platform empowers developers and marketers to
+              create a variety of content, including logos, promotional videos, images, and
+              optimized templates through simple promptinputs. By combining the power of AI with
+              user-friendly tools, DogeGPT aims to revolutionize  content creation for DeFi projects
+              and streamline their marketing efforts.
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

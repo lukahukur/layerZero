@@ -10,3 +10,7 @@
 body {
   background: black;
 }
+
+header {
+  @apply bg-gradient-to-b from-black to-transparent;
+}
