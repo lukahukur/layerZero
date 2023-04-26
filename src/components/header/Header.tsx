@@ -22,9 +22,9 @@ const Header = () => {
   return (
     <header className={'text-white font-RobotoMono flex justify-start p-7'}>
       <div className={'font-light'}>LOGO</div>
-      <div className={'w-full flex justify-center'}>
+      <nav className={'w-full flex justify-center'}>
         <div className={'w-[1000px] flex justify-between '}>{routeMap()}</div>
-      </div>
+      </nav>
     </header>
   )
 }

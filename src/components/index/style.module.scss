@@ -1,0 +1,15 @@
+.words {
+  h1 p{
+    @apply text-[96px] font-[600] font-Roboto leading-[112px];
+  }
+  h1 p:nth-child(2){
+    @apply pl-[200px];
+  }
+  h1 p:nth-child(3){
+    @apply pl-[400px];
+  }
+  section{
+    @apply  w-[1000px] mt-20;
+  }
+  @apply  h-full flex flex-col items-center;
+}
