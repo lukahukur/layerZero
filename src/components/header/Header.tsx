@@ -1,11 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import Logo from '../../assets/logo.png'
+import { HashLink } from 'react-router-hash-link'
 
 const routes: { name: string; path: string }[] = [
   { name: 'HOME', path: '/' },
   { name: 'TEAM', path: '/team' },
-  { name: 'COMMUNITY', path: '/community' },
+  { name: 'COMMUNITY', path: '#community' },
   { name: 'DOGEGPT', path: '/dogegpt' },
   { name: 'dApp', path: '/dApp' }
 ]
@@ -18,14 +19,23 @@ const Header = () => {
     return pathName === path.pathname ? 'xl:border-b border-b-white' : ''
   }
   const routeMap = () =>
-    routes.map((e) => (
-      <Link
-        onClick={() => setDropDownState(false)}
-        className={underlineCurrentLink(e.path)}
-        to={e.path}>
-        {'</A>'} {e.name}
-      </Link>
-    ))
+    routes.map((e) => {
+      if (e.path[0] === '#') {
+        return (
+          <HashLink smooth to={e.path}>
+            {'</A> '} {e.name}
+          </HashLink>
+        )
+      }
+      return (
+        <Link
+          onClick={() => setDropDownState(false)}
+          className={underlineCurrentLink(e.path)}
+          to={e.path}>
+          {'</A>'} {e.name}
+        </Link>
+      )
+    })
   return (
     <header
       className={

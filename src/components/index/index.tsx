@@ -34,9 +34,10 @@ const Main = () => {
               <p>INTRODUCING DOGEGPT</p>
               <span className={'mt-4'}>
                 <p>
-                UNLEASHING THE COSMIC POWER OF MEME MAGIC AND CUTTING-EDGE AI, DOGEGPT IS SET TO REVOLUTIONIZE THE DEFI
-                  UNIVERSE BY CONJURING UP ANARSENAL OF MIND-BENDING LOGOS, MESMERIZING VIDEOS, AND
-                  OUT-OF-THIS-WORLD TEMPLATES THAT'LL LEAVE PROJECTS BARKING FOR MORE
+                  UNLEASHING THE COSMIC POWER OF MEME MAGIC AND CUTTING-EDGE AI, DOGEGPT IS SET TO
+                  REVOLUTIONIZE THE DEFI UNIVERSE BY CONJURING UP ANARSENAL OF MIND-BENDING LOGOS,
+                  MESMERIZING VIDEOS, AND OUT-OF-THIS-WORLD TEMPLATES THAT'LL LEAVE PROJECTS BARKING
+                  FOR MORE
                 </p>
               </span>
             </div>
@@ -52,7 +53,9 @@ const Main = () => {
             </div>
           </div>
           <div className={'h-14 xl:text-base text-[12px] flex  items-center justify-center'}>
-            <Link to={'https://doc.doge-gpt.ai/'}target="_blank">{'</A>'} WHITEPAPER</Link>
+            <Link to={'https://doc.doge-gpt.ai/'} target="_blank">
+              {'</A>'} WHITEPAPER
+            </Link>
           </div>
         </div>
       </main>
@@ -118,7 +121,7 @@ const Main = () => {
                 <p>Logo creation</p>
               </li>
             </ul>
-            <div>DEVELOP WITH DOGEGPT</div>
+            <div id={'community'}>DEVELOP WITH DOGEGPT</div>
           </div>
         </section>
         <nav>
@@ -137,13 +140,15 @@ const Main = () => {
           <section className={'w-[85%]'}>
             <ul className={'grid 2xl:grid-cols-3 grid-cols-2 h-[400px]'}>
               <li>
-                <Link to={'https://doc.doge-gpt.ai/' } target="_blank">
+                <Link to={'https://doc.doge-gpt.ai/'} target="_blank">
                   <img src={Star} alt="star" />
                   <h2>INTRODUCTION</h2>
                 </Link>
               </li>
               <li>
-                <Link to={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite'} target="_blank">
+                <Link
+                  to={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite'}
+                  target="_blank">
                   <img src={Braces} alt="braces" />
                   <h2>DogeGPT(CCS)</h2>
                 </Link>
@@ -167,7 +172,7 @@ const Main = () => {
                 </Link>
               </li>
               <li>
-                <Link to={'https://doc.doge-gpt.ai/doge-gpt/legal-and-compliance'} target="_blank" >
+                <Link to={'https://doc.doge-gpt.ai/doge-gpt/legal-and-compliance'} target="_blank">
                   <img src={Crosshair} alt="crosshair" />
                   <h2>Legal Compliance</h2>
                 </Link>
