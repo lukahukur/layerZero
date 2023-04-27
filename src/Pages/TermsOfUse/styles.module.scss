@@ -1,0 +1,13 @@
+.section {
+  h2{
+    @apply text-4xl font-[500] mb-6;
+  }
+
+  div{
+    @apply border-red-500 w-screen md:w-[75%] w-[100%] h-full;
+  }
+  p{
+    @apply font-RobotoMono;
+  }
+  @apply w-[200px] md:w-[60%] w-[90%] h-fit mb-14;
+}

@@ -1,0 +1,14 @@
+.section {
+  @apply w-[200px] md:w-[60%] w-[90%] h-fit mb-14;
+}
+.section h2 {
+  @apply text-4xl font-[500] mb-6;
+}
+.section div {
+  @apply border-red-500 w-screen md:w-[75%] w-[100%] h-full;
+}
+.section p {
+  @apply font-RobotoMono;
+}
+
+/*# sourceMappingURL=styles.module.css.map */

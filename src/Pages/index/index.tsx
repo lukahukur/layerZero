@@ -69,10 +69,11 @@ const Main: FC = () => {
                 </span>
               </div>
             </section>
-            <div className={'overflow-hidden h-[35vh] md:h-full'}>
+            <div className={'overflow-hidden h-[35vh] w-full md:h-full'}>
               <video
                 autoPlay={true}
                 muted={true}
+                playsInline={true}
                 loop={true}
                 className={'h-full w-full object-cover '}>
                 <source src={Video} type="video/mp4" />

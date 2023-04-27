@@ -6,7 +6,6 @@
     @apply flex items-center justify-center font-[600] bg-white mt-10 h-14 text-black font-RobotoMono;
   }
 
-
   li{
     div{
       font-family: 'Inter', sans-serif;
@@ -27,6 +26,7 @@
   section {
     @apply hidden;
   }
-@apply xl:w-[1000px] w-[80%] mt-40;
+
+@apply xl:w-[1000px] w-[80%] mt-40 ;
 }
 

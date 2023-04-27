@@ -5,6 +5,7 @@ import Braces from '../../assets/braces.svg'
 import Crosshair from '../../assets/crosshair.svg'
 import Msg from '../../assets/msg.png'
 import Logo from '../../assets/logo.png'
+import { HashLink } from 'react-router-hash-link'
 
 const links: { name: string; link: string }[] = [
   { name: 'TELEGRAM', link: '/' },
@@ -79,8 +80,12 @@ const Footer = () => {
       <div className={'flex flex-col items-center w-full h-32'}>
         <div className={'border-b border-zinc-700 w-[85%] font-RobotoMono justify-end'}>
           <div className={'mb-2'}>
-            <div>Terms Of Use</div>
-            <div>Privacy Policy</div>
+            <div>
+              <HashLink to={'/terms-of-use#'}>Terms Of Use</HashLink>
+            </div>
+            <div>
+              <HashLink to={'/privacy-policy#'}>Privacy Policy</HashLink>
+            </div>
             <div>Cookie Policy</div>
           </div>
         </div>

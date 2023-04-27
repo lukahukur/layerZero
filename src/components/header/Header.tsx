@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <header
       className={
-        'text-white flex items-center font-RobotoMono justify-start p-7 md:pl-20 pl-10 text-sm '
+        'text-white flex items-center font-RobotoMono justify-start p-7 md:pl-20 sm:pl-10 text-sm '
       }>
       <Link to={'/'} className={'font-light flex items-center text-[18px] font-Roboto fixed z-10'}>
         <img width={'35px'} src={Logo} alt={'logo'} />
