@@ -6,6 +6,7 @@ import Crosshair from '../../assets/crosshair.svg'
 import Braces from '../../assets/braces.svg'
 import Msg from '../../assets/msg.png'
 import Logo from '../../assets/logo.png'
+import useWordsAnimation, { useWordsAnimationBulk } from '../../Hooks/useWordsAnimation'
 
 const links: { name: string; link: string }[] = [
   { name: 'TELEGRAM', link: '/' },
@@ -23,21 +24,30 @@ const Main = () => {
         <div className={styles.section1}>
           <section>
             <h1>
-              <p>Content</p>
-              <p>Creation</p>
-              <p>Suite (CCS)</p>
+              {useWordsAnimation({ word: 'Content', delay: 130, direction: 'ltr', tag: 'p' })}
+              {useWordsAnimation({ word: 'Creation', delay: 100, direction: 'rtl', tag: 'p' })}
+              {useWordsAnimation({ word: 'Suite (CCS)', delay: 120, direction: 'ltr', tag: 'p' })}
             </h1>
             <div
               className={
                 'font-RobotoMono  flex flex-col items-end xl:px-40 md:px-24   text-justify'
               }>
-              <p>INTRODUCING DOGEGPT</p>
+              <p>
+                {useWordsAnimation({
+                  word: 'INTRODUCING DOGEGPT',
+                  delay: 90,
+                  direction: 'ltr',
+                  tag: 'p'
+                })}
+              </p>
               <span className={'mt-4'}>
                 <p>
-                  UNLEASHING THE COSMIC POWER OF MEME MAGIC AND CUTTING-EDGE AI, DOGEGPT IS SET TO
-                  REVOLUTIONIZE THE DEFI UNIVERSE BY CONJURING UP ANARSENAL OF MIND-BENDING LOGOS,
-                  MESMERIZING VIDEOS, AND OUT-OF-THIS-WORLD TEMPLATES THAT'LL LEAVE PROJECTS BARKING
-                  FOR MORE
+                  {useWordsAnimationBulk([
+                    'UNLEASHING THE COSMIC POWER OF MEME MAGIC AND CUTTING-EDGE AI, DOGEGPT IS SET TO',
+                    'REVOLUTIONIZE THE DEFI UNIVERSE BY CONJURING UP ANARSENAL OF MIND-BENDING LOGOS,',
+                    "MESMERIZING VIDEOS, AND OUT-OF-THIS-WORLD TEMPLATES THAT'LL LEAVE PROJECTS BARKING",
+                    'FOR MORE'
+                  ])}
                 </p>
               </span>
             </div>
