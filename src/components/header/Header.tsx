@@ -22,7 +22,7 @@ const Header = () => {
     routes.map((e) => {
       if (e.path[0] === '#') {
         return (
-          <HashLink smooth to={e.path}>
+          <HashLink onClick={() => setDropDownState(false)} smooth to={e.path}>
             {'</A> '} {e.name}
           </HashLink>
         )

@@ -155,6 +155,7 @@
   li {
     @apply flex items-center lg:pl-36 justify-start md:text-[22px];
   }
+
   li a {
     @apply flex items-center justify-center;
   }
@@ -169,5 +170,5 @@
     @apply text-[14px] xl:w-40 w-fit xl:mr-0 mr-6 text-xs;
   }
 
-  @apply  h-screen  justify-between text-white font-Roboto flex flex-col items-start ;
+  @apply  h-[60vh]  justify-between text-white font-Roboto flex flex-col items-start ;
 }

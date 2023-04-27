@@ -116,7 +116,7 @@
 }
 
 .section5 {
-  @apply h-screen  justify-between text-white font-Roboto flex flex-col items-start;
+  @apply h-[60vh]  justify-between text-white font-Roboto flex flex-col items-start;
 }
 .section5 img {
   @apply xl:w-[40px] xl:h-[40px] w-[20px] h-[20px] xl:mr-4 mr-2;
