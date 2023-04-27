@@ -21,14 +21,14 @@ const Developers: React.FC = () => {
             {useWordsAnimation({
               direction: 'ltr',
               delay: 50,
-              word: 'Some cool text',
+              word: 'Some cool text', /////// aqa chaaswore texti animaciisatviiiissss tooo
               tag: 'p',
               borderSize: 20
             })}
             {useWordsAnimation({
               direction: 'ltr',
               delay: 100,
-              word: 'About DogeGPT ',
+              word: 'About DogeGPT ', /////////// da aqaaaaaaaaaaaaaaaaaa
               tag: 'p',
               borderSize: 20
             })}
@@ -37,7 +37,7 @@ const Developers: React.FC = () => {
             <p>LAYERZERO ENABLES DEVELOPERS TO SEND SECURE MESSAGES ACROSS BLOCKCHAINS.</p>
           </div>
         </section>
-        <div className={'mr-32'}>
+        <div className={'xl:mr-32 md:mr-24 sm:mr-20 mr-5'}>
           <ul className={styles.blocks}>
             <li>
               <span>
@@ -133,11 +133,11 @@ const Developers: React.FC = () => {
         </div>
       </main>
       <div
-        className={
-          'h-screen w-full flex items-start lg:justify-center lg:pl-0 jsutify-start pl-10'
-        }>
+        className={`h-screen w-full flex items-start 
+           lg:justify-center lg:pl-0 jsutify-start  sm:pr-20 px-5
+           `}>
         <div
-          className={`bg-neutral-900 lg:w-1/2 md:w-2/3 w-[95%] h-[550px] text-white font-Roboto 
+          className={`bg-neutral-900 lg:w-1/2 md:w-2/3 w-full h-[550px] text-white font-Roboto 
                          flex items-center justify-between flex-col xl:py-16 py-10 px-3
                       `}>
           <div className={'text-center'}>

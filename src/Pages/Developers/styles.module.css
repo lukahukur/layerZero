@@ -1,5 +1,5 @@
 .section1 {
-  @apply xl:ml-32 lg:ml-20 ml-10 h-fit font-Roboto mt-20;
+  @apply xl:ml-32 lg:ml-20 ml-5 h-fit font-Roboto mt-20;
 }
 .section1 h1 {
   @apply xl:text-[96px] sm:text-[60px] font-[600] text-[48px]
@@ -10,7 +10,7 @@
 }
 
 .blocks {
-  @apply grid md:grid-cols-2 xl:ml-32 lg:ml-20 ml-10  my-28 gap-5;
+  @apply grid md:grid-cols-2 xl:ml-32 lg:ml-20 ml-5 my-28 gap-5;
 }
 .blocks li {
   @apply bg-neutral-900 self-center w-full h-[500px]
