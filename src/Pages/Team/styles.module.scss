@@ -1,0 +1,29 @@
+.section1 {
+    h1{
+      @apply xl:text-[96px] sm:text-[60px] font-[600] text-[48px]
+      font-Roboto xl:leading-[100px] md:leading-[60px] sm:leading-[55px] leading-[48px];;
+    }
+
+    div{
+        @apply max-w-[600px] font-RobotoMono mt-14 font-[500] leading-[18px];
+    }
+
+    @apply ml-32 h-fit font-Roboto mt-20;
+}
+
+.blocks {
+  div {
+  @apply  bg-neutral-900 self-center w-full h-[500px]
+          flex
+  ;
+    div:nth-child(1){
+      @apply flex items-center justify-start xl:pl-[50px];
+    }
+
+    img {
+      @apply min-w-[55px] w-[50%] h-[50%];
+    }
+  }
+
+  @apply grid grid-cols-2 ml-32 my-28 gap-8;
+}

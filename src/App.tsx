@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
-import Main from './components/index'
+import Main from './Pages/index'
 import Header from './components/header/Header'
+import Team from './Pages/Team/Team'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </span>
       <Routes>
         <Route path={'/'} element={<Main />} />
+        <Route path={'/team'} element={<Team />} />
       </Routes>
     </>
   )
