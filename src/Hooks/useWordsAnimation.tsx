@@ -52,7 +52,7 @@ export const useWordsAnimationBulk = (words: string[]) => {
     useWordsAnimation({
       tag: 'span',
       word: e,
-      direction: 'rtl',
+      direction: 'ltr',
       delay: [10, 8, 9, 11, 4, 20, 40, 46, 188, 200][i]
     })
   )

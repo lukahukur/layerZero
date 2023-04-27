@@ -59,11 +59,13 @@ const Main = () => {
               className={
                 'bg-white w-[80%] text-[12px] xl:text-base h-14 lg:w-96 font-bold flex items-center justify-center mb-1 xl:mb-0 xl:mt-12'
               }>
-              <Link to={'dogegpt'}>DEVELOP WITH DOGEGPT</Link>
+              <Link to={'dogegpt'} className={'underline_link_black'}>
+                DEVELOP WITH DOGEGPT
+              </Link>
             </div>
           </div>
           <div className={'h-14 xl:text-base text-[12px] flex  items-center justify-center'}>
-            <Link to={'https://doc.doge-gpt.ai/'} target="_blank">
+            <Link className={'underline_link'} to={'https://doc.doge-gpt.ai/'} target="_blank">
               {'</A>'} WHITEPAPER
             </Link>
           </div>
