@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 const ShowCase = () => {
   return (
     <section className={styles.section}>
@@ -32,9 +32,9 @@ const ShowCase = () => {
           </li>
         </ul>
         <div>
-          <Link to={'/'} className={'underline_link_black'} id={'community'}>
+          <HashLink to={'/developers#'} className={'underline_link_black'} id={'community'}>
             DEVELOP WITH DOGEGPT
-          </Link>
+          </HashLink>
         </div>
       </div>
     </section>

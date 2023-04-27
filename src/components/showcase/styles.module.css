@@ -19,7 +19,7 @@
   @apply h-[200px] justify-start;
 }
 .section li:hover section {
-  @apply block w-full h-full border p-5;
+  @apply block w-full h-full  p-5;
 }
 .section section {
   @apply hidden;
