@@ -20,7 +20,7 @@
       @apply flex items-center justify-start xl:pl-[50px];
     }
 
-    img {
+    img:nth-child(1) {
       @apply min-w-[55px] w-[50%] h-[50%];
     }
   }

@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 .section1 {
-  @apply h-full flex flex-col items-center;
+  @apply h-full flex flex-col items-center justify-between;
 }
 .section1 h1 p {
-  @apply xl:text-[96px] sm:text-[60px]   font-[600] text-[48px]
-           font-Roboto xl:leading-[112px] md:leading-[60px] sm:leading-[55px] leading-[48px];
+  @apply xl:text-[96px] sm:text-[60px] font-[600] text-[48px]
+           font-Roboto xl:leading-[90px] md:leading-[60px] sm:leading-[55px] leading-[48px];
 }
-.section1 h1 p:nth-child(2) {
-  @apply xl:pl-[200px] md:pl-[130px] sm:pl-[100px] pl-[50px];
+.section1 h1 span {
+  @apply flex items-end justify-end xl:pr-[400px] md:pr-[340px] sm:pr-[50%] sm:pl-0 pl-[230px] pr-[50%] w-full;
 }
 .section1 h1 p:nth-child(3) {
   @apply xl:pl-[400px] md:pl-[250px] sm:pl-[150px] pl-[90px];

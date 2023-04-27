@@ -9,27 +9,48 @@ import Footer from '../../components/Footer/Footer'
 const Main: FC = () => {
   return (
     <div>
-      <main className={'h-screen text-white pt-14 font-Roboto flex flex-col justify-between'}>
+      <main className={'min-h-screen text-white pt-14 font-Roboto flex flex-col justify-between'}>
         <div className={styles.section1}>
           <section>
             <h1>
-              {useWordsAnimation({ word: 'Content', delay: 130, direction: 'ltr', tag: 'p' })}
-              {useWordsAnimation({ word: 'Creation', delay: 100, direction: 'rtl', tag: 'p' })}
-              {useWordsAnimation({ word: 'Suite (CCS)', delay: 120, direction: 'ltr', tag: 'p' })}
+              {useWordsAnimation({
+                word: 'Content',
+                delay: 100,
+                direction: 'ltr',
+                tag: 'p',
+                borderSize: 20
+              })}
+              <span>
+                {useWordsAnimation({
+                  word: 'Creation',
+                  delay: 70,
+                  direction: 'rtl',
+                  tag: 'p',
+                  borderSize: 20
+                })}
+              </span>
+              {useWordsAnimation({
+                word: 'Suite (CCS)',
+                delay: 90,
+                direction: 'ltr',
+                tag: 'p',
+                borderSize: 20
+              })}
             </h1>
             <div
               className={
-                'font-RobotoMono  flex flex-col items-end xl:px-40 md:px-24   text-justify'
+                'font-RobotoMono xl:mt-5 xl:h-36 md:h-28 sm:h-24 h-32 flex flex-col items-end xl:px-40 md:px-24 text-justify'
               }>
               <span>
                 {useWordsAnimation({
                   word: 'INTRODUCING DOGEGPT',
-                  delay: 90,
+                  delay: 20,
                   direction: 'ltr',
-                  tag: 'p'
+                  tag: 'p',
+                  borderSize: 10
                 })}
               </span>
-              <span className={'mt-4'}>
+              <span className={'mt-1'}>
                 <p>
                   {useWordsAnimationBulk([
                     'UNLEASHING THE COSMIC POWER OF MEME MAGIC AND CUTTING-EDGE AI, DOGEGPT IS SET TO',
@@ -41,12 +62,24 @@ const Main: FC = () => {
               </span>
             </div>
           </section>
+          <div className={'overflow-hidden h-[35vh] md:h-full'}>
+            <video
+              autoPlay={true}
+              muted={true}
+              loop={true}
+              className={'h-full w-full object-cover '}>
+              <source
+                src="https://layerzero.network/videos/header-animation.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
         </div>
         <div className={'flex flex-col font-RobotoMono'}>
           <div className={'text-black  flex justify-center'}>
             <div
               className={
-                'bg-white w-[80%] text-[12px] xl:text-base h-14 lg:w-96 font-bold flex items-center justify-center mb-1 xl:mb-0 xl:mt-12'
+                'bg-white w-[80%] text-[12px] xl:text-base h-14 lg:w-96 font-bold flex items-center justify-center mb-1'
               }>
               <Link to={'dogegpt'} className={'underline_link_black'}>
                 DEVELOP WITH DOGEGPT

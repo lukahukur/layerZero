@@ -49,7 +49,7 @@ const Header = () => {
       }>
       <Link to={'/'} className={'font-light flex items-center text-[18px] font-Roboto fixed z-10'}>
         <img width={'35px'} src={Logo} alt={'logo'} />
-        <p>&nbsp;DogeGPT</p>
+        <p className={'font-[400] font-RobotoMono'}>&nbsp;DogeGPT</p>
       </Link>
       <nav
         className={`transition duration-200 all w-full flex items-center xl:items-start mt-[690px] -ml-[40px] md:-ml-[80px] xl:ml-0 ${

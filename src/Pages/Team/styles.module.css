@@ -19,7 +19,7 @@
 .blocks div div:nth-child(1) {
   @apply flex items-center justify-start xl:pl-[50px];
 }
-.blocks div img {
+.blocks div img:nth-child(1) {
   @apply min-w-[55px] w-[50%] h-[50%];
 }
 

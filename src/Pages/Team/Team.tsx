@@ -5,7 +5,8 @@ import styles from './styles.module.scss'
 import Star from '../../assets/star.svg'
 import Braces from '../../assets/braces.svg'
 import Crosshair from '../../assets/crosshair.svg'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import Arrow from '../../assets/Arrow.svg'
 
 const Team: React.FC = () => {
   return (
@@ -46,7 +47,9 @@ const Team: React.FC = () => {
 
               <div>
                 <p>01 / Introduction</p>
-                <nav></nav>
+                <nav>
+                  <img src={Arrow} alt="" />
+                </nav>
               </div>
             </div>
             <div>
@@ -84,13 +87,5 @@ const Team: React.FC = () => {
     </>
   )
 }
-
-const Arrow = () => (
-  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 10">
-    <path
-      d="M16.4714 5.4714c.2604-.26035.2604-.68245 0-.9428L12.2288.285954c-.2604-.2603488-.6825-.2603488-.9428 0-.2604.26035-.2604.68246 0 .942806L15.0572 5 11.286 8.77124c-.2604.26035-.2604.68246 0 .94281.2603.26034.6824.26034.9428 0l4.2426-4.24265ZM0 5.66667h16V4.33333H0v1.33334Z"
-      className={'fill-neutral-600'}></path>
-  </svg>
-)
 
 export default Team

@@ -4,12 +4,20 @@ type useWordsAnimationType = {
   word: string
   delay: number
 
+  borderSize: number
   direction: 'ltr' | 'rtl'
   tag: 'p' | 'span'
 
   key?: number
 }
-const useWordsAnimation = ({ word, delay, direction, tag, key }: useWordsAnimationType) => {
+const useWordsAnimation = ({
+  word,
+  delay,
+  direction,
+  tag,
+  key,
+  borderSize
+}: useWordsAnimationType) => {
   const [get, set] = useState('')
   const [isFinished, setFinishState] = useState(false)
 
@@ -33,7 +41,13 @@ const useWordsAnimation = ({ word, delay, direction, tag, key }: useWordsAnimati
   return tag === 'p' ? (
     <p
       className={'w-fit block'}
-      style={isFinished ? { border: 'none' } : { borderRight: '10px solid white' }}>
+      style={
+        isFinished
+          ? { border: 'none' }
+          : direction === 'ltr'
+          ? { borderRight: `${borderSize}px solid white` }
+          : { borderLeft: `${borderSize}px solid white` }
+      }>
       {get}
     </p>
   ) : (
@@ -43,7 +57,9 @@ const useWordsAnimation = ({ word, delay, direction, tag, key }: useWordsAnimati
       style={
         isFinished
           ? { border: 'none', display: 'inline' }
-          : { borderRight: '10px solid white', display: 'block' }
+          : direction === 'ltr'
+          ? { borderRight: `${borderSize}px solid white`, display: 'block' }
+          : { borderLeft: `${borderSize}px solid white`, display: 'block' }
       }>
       {get}
     </span>
@@ -57,7 +73,8 @@ export const useWordsAnimationBulk = (words: string[]) => {
       tag: 'span',
       word: e,
       direction: 'ltr',
-      delay: [10, 8, 9, 11, 4, 20, 40, 46, 188, 200][i]
+      delay: [7, 6, 1, 4, 4, 20, 40, 46, 188, 200][i],
+      borderSize: 8
     })
   )
 }
