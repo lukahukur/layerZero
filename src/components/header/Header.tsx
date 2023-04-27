@@ -22,7 +22,11 @@ const Header = () => {
     routes.map((e) => {
       if (e.path.includes('/#')) {
         return (
-          <HashLink onClick={() => setDropDownState(false)} smooth to={e.path}>
+          <HashLink
+            className={underlineCurrentLink(e.path) + 'underline_link'}
+            onClick={() => setDropDownState(false)}
+            smooth
+            to={e.path}>
             {'</A> '} {e.name}
           </HashLink>
         )
@@ -30,7 +34,7 @@ const Header = () => {
       return (
         <Link
           onClick={() => setDropDownState(false)}
-          className={underlineCurrentLink(e.path)}
+          className={underlineCurrentLink(e.path) + 'underline_link'}
           to={e.path}>
           {'</A>'} {e.name}
         </Link>
