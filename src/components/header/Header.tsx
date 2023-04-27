@@ -19,10 +19,11 @@ const Header = () => {
     return pathName === path.pathname ? 'xl:border-b border-b-white' : ''
   }
   const routeMap = () =>
-    routes.map((e) => {
+    routes.map((e, i) => {
       if (e.path.includes('/#')) {
         return (
           <HashLink
+            key={i}
             className={underlineCurrentLink(e.path) + 'underline_link'}
             onClick={() => setDropDownState(false)}
             smooth
@@ -33,6 +34,7 @@ const Header = () => {
       }
       return (
         <Link
+          key={i}
           onClick={() => setDropDownState(false)}
           className={underlineCurrentLink(e.path) + 'underline_link'}
           to={e.path}>

@@ -7,6 +7,7 @@ import Braces from '../../assets/braces.svg'
 import Msg from '../../assets/msg.png'
 import Logo from '../../assets/logo.png'
 import useWordsAnimation, { useWordsAnimationBulk } from '../../Hooks/useWordsAnimation'
+import ShowCase from '../showcase/Showcase'
 
 const links: { name: string; link: string }[] = [
   { name: 'TELEGRAM', link: '/' },
@@ -32,14 +33,14 @@ const Main = () => {
               className={
                 'font-RobotoMono  flex flex-col items-end xl:px-40 md:px-24   text-justify'
               }>
-              <p>
+              <span>
                 {useWordsAnimation({
                   word: 'INTRODUCING DOGEGPT',
                   delay: 90,
                   direction: 'ltr',
                   tag: 'p'
                 })}
-              </p>
+              </span>
               <span className={'mt-4'}>
                 <p>
                   {useWordsAnimationBulk([
@@ -116,30 +117,11 @@ const Main = () => {
         <Layers />
       </div>
       <div className={styles.section4}>
-        <section>
-          <h2>EXAMPLES</h2>
-          <div>
-            <ul>
-              <li>
-                <div>01 / </div>
-                <p>Buybot GIF</p>
-              </li>
-              <li>
-                <div>02 / </div>
-                <p>Video creation</p>
-              </li>
-              <li>
-                <div>03 / </div>
-                <p>Logo creation</p>
-              </li>
-            </ul>
-            <div id={'community'}>DEVELOP WITH DOGEGPT</div>
-          </div>
-        </section>
+        <ShowCase />
         <nav>
           <ul>
-            {links.map((e) => (
-              <Link to={e.link}>
+            {links.map((e, i) => (
+              <Link to={e.link} key={i}>
                 {'</A>'}
                 {e.name}
               </Link>

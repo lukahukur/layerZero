@@ -6,8 +6,10 @@ type useWordsAnimationType = {
 
   direction: 'ltr' | 'rtl'
   tag: 'p' | 'span'
+
+  key?: number
 }
-const useWordsAnimation = ({ word, delay, direction, tag }: useWordsAnimationType) => {
+const useWordsAnimation = ({ word, delay, direction, tag, key }: useWordsAnimationType) => {
   const [get, set] = useState('')
   const [isFinished, setFinishState] = useState(false)
 
@@ -36,6 +38,7 @@ const useWordsAnimation = ({ word, delay, direction, tag }: useWordsAnimationTyp
     </p>
   ) : (
     <span
+      key={key && key}
       className={'w-fit transition-all'}
       style={
         isFinished
@@ -50,6 +53,7 @@ const useWordsAnimation = ({ word, delay, direction, tag }: useWordsAnimationTyp
 export const useWordsAnimationBulk = (words: string[]) => {
   return words.map((e, i) =>
     useWordsAnimation({
+      key: i,
       tag: 'span',
       word: e,
       direction: 'ltr',

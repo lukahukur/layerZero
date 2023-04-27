@@ -1,0 +1,15 @@
+.section {
+  @apply xl:w-[1000px] w-[80%] mt-40;
+}
+.section div div:nth-child(2) {
+  @apply flex items-center justify-center font-[600] bg-white mt-10 h-14 text-black font-RobotoMono;
+}
+.section li {
+  @apply flex xl:text-[36px] text-[25px] h-16 items-center border-t border-zinc-700;
+}
+.section li div {
+  font-family: "Inter", sans-serif;
+  @apply text-neutral-600 xl:text-[20px] text-[18px] mr-10;
+}
+
+/*# sourceMappingURL=styles.module.css.map */

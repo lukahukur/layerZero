@@ -95,24 +95,11 @@
 .section4 nav ul {
   @apply md:flex text-sm  grid grid-cols-3 mt-6 md:mt-0 xl:px-20 w-full justify-between;
 }
-.section4 section {
-  @apply xl:w-[1000px] w-[80%] mt-40;
-}
-.section4 section div div:nth-child(2) {
-  @apply flex items-center justify-center font-[600] bg-white mt-10 h-14 text-black font-RobotoMono;
-}
 .section4 h2 {
   @apply font-[600] xl:text-[54px] xl:leading-[63px] text-[40px] xl:mb-14 mb-10;
 }
 .section4 li:nth-child(3) {
   @apply border-b border-zinc-700;
-}
-.section4 li {
-  @apply flex xl:text-[36px] text-[25px] h-16 items-center border-t border-zinc-700;
-}
-.section4 li div {
-  font-family: "Inter", sans-serif;
-  @apply text-neutral-600 xl:text-[20px] text-[18px] mr-10;
 }
 
 .section5 {
