@@ -1,5 +1,6 @@
-import styles from './styles.module.scss'
-import { HashLink } from 'react-router-hash-link'
+import styles from './styles.module.scss';
+import { HashLink } from 'react-router-hash-link';
+
 const ShowCase = () => {
   return (
     <section className={styles.section}>
@@ -9,7 +10,7 @@ const ShowCase = () => {
           <li>
             <span>
               <div>01 / </div>
-              <p>Buybot GIF</p>
+              <p><a href="https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/buybot-gif-creator" target="_blank" rel="noopener noreferrer">Buybot GIF</a></p>
             </span>
 
             <section>Test</section>
@@ -17,7 +18,7 @@ const ShowCase = () => {
           <li>
             <span>
               <div>02 / </div>
-              <p>Video creation</p>
+              <p><a href="https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/video-creation-tool" target="_blank" rel="noopener noreferrer">Video creation</a></p>
             </span>
 
             <section>Test</section>
@@ -25,7 +26,7 @@ const ShowCase = () => {
           <li>
             <span>
               <div>03 / </div>
-              <p>Logo creation</p>
+              <p><a href="https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/logo-generator" target="_blank" rel="noopener noreferrer">Logo creation</a></p>
             </span>
 
             <section>Test</section>
@@ -38,7 +39,7 @@ const ShowCase = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ShowCase
+export default ShowCase;

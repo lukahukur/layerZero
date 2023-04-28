@@ -8,12 +8,12 @@ import Logo from '../../assets/logo.png'
 import { HashLink } from 'react-router-hash-link'
 
 const links: { name: string; link: string }[] = [
-  { name: 'TELEGRAM', link: '/' },
+  { name: 'TELEGRAM', link: 'https://t.me/gptdoge' },
   { name: 'Discord', link: '/' },
   { name: 'Twitter', link: '/' },
   { name: 'Medium', link: '/' },
   { name: 'DogeGPT', link: '/' },
-  { name: 'Developers', link: '/' },
+  { name: 'Developers', link: '/developers' },
   { name: 'About', link: '/' }
 ]
 const Footer = () => {
@@ -86,7 +86,7 @@ const Footer = () => {
             <div>
               <HashLink to={'/privacy-policy#'}>Privacy Policy</HashLink>
             </div>
-            <div>Cookie Policy</div>
+            
           </div>
         </div>
         <div className={'h-32 w-[85%] flex justify-between items-center text-sm'}>
@@ -95,7 +95,10 @@ const Footer = () => {
           </div>
           <div>
             <img src={Msg} alt={'message icon'} />
-            <p> Contact Us</p>
+            <a href="mailto:support@doge-gpt.ai">
+  <p>Contact Us</p>
+</a>
+
           </div>
           <div>
             <img src={Logo} alt="Logo" />

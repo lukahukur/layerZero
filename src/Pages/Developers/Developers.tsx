@@ -21,20 +21,21 @@ const Developers: React.FC = () => {
             {useWordsAnimation({
               direction: 'ltr',
               delay: 50,
-              word: 'Some cool text', /////// aqa chaaswore texti animaciisatviiiissss tooo
+              word: 'Develop with DogeGPT', /////// aqa chaaswore texti animaciisatviiiissss tooo
               tag: 'p',
               borderSize: 20
             })}
             {useWordsAnimation({
               direction: 'ltr',
               delay: 100,
-              word: 'About DogeGPT ', /////////// da aqaaaaaaaaaaaaaaaaaa
+              word: '', /////////// da aqaaaaaaaaaaaaaaaaaa
               tag: 'p',
               borderSize: 20
             })}
           </h1>
           <div>
-            <p>LAYERZERO ENABLES DEVELOPERS TO SEND SECURE MESSAGES ACROSS BLOCKCHAINS.</p>
+            <p>DogeGPT provides users with a powerful AI-powered Content Creation Suite that enables the creation of high-quality logos, videos, and other promotional materials for DeFi projects quickly and easily.
+</p>
           </div>
         </section>
         <div className={'xl:mr-32 md:mr-24 sm:mr-20 mr-5'}>
@@ -46,12 +47,16 @@ const Developers: React.FC = () => {
 
               <div>
                 <h2>
-                  <p>01 / </p> Introduction
+                <a href="https://doc.doge-gpt.ai/doge-gpt/" target="_blank">
+  <p>01 / </p> Introduction
+</a>
+
                 </h2>
                 <span>
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                </span>
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/introduction/background'} target='_blank' displayName={'Background'} />
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/f.a.q'} target='_blank' displayName={'FAQ'} />
+</span>
+
               </div>
             </li>
             <li>
@@ -61,12 +66,22 @@ const Developers: React.FC = () => {
 
               <div>
                 <h2>
-                  <p>02 / </p> Introduction
+                <a href="https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features" target="_blank">
+  <p>02 / </p> Core Features
+</a>
                 </h2>
                 <span>
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                </span>
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/logo-generator'} target='_blank' displayName={'Logo Generator'} />
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/video-creation-tool'} target='_blank' displayName={'Video Creation'} />
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/image-design-tool'} target='_blank' displayName={'Image Design'} />
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/template-customizer'} target='_blank' displayName={'Template Customizer'} />
+
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/telegram-banner-maker'} target='_blank' displayName={'Telegram Banner'} />
+
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/buybot-gif-creator'} target='_blank' displayName={'Buybot GIF'} />
+  <ArrowLinkComponent href={'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/content-scheduler'} target='_blank' displayName={'Content Scheduler'} />
+</span>
+
               </div>
             </li>
             <li>
@@ -76,12 +91,13 @@ const Developers: React.FC = () => {
 
               <div>
                 <h2>
-                  <p>03 / </p> Introduction
+                <a href="https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features/template-customizer " target="_blank">
+  <p>03 / </p> Guides
+</a>
                 </h2>
                 <span>
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                </span>
+                  <ArrowLinkComponent href={''} displayName={'Tutorials (coming soon)'} />
+                      </span>
               </div>
             </li>
             <li>
@@ -90,12 +106,14 @@ const Developers: React.FC = () => {
               </span>
               <div>
                 <h2>
-                  <p>04 / </p> Introduction
+                <a href="https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features" target="_blank">
+  <p>04 / </p> Troubleshooting
+</a>
                 </h2>
                 <span>
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
+                  <ArrowLinkComponent href={'mailto:support@doge-gpt.ai'} displayName={'Contact Us'} />
+                  <ArrowLinkComponent href={'https://t.me/gptdoge'} displayName={'Join community'} />
+              
                 </span>
               </div>
             </li>
@@ -105,30 +123,18 @@ const Developers: React.FC = () => {
               </span>
               <div>
                 <h2>
-                  <p>05 / </p> Introduction
+                <a href="https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite/core-features" target="_blank">
+  <p>05 / </p> Examples
+</a>
                 </h2>
                 <span>
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
+                  <ArrowLinkComponent href={'/'} displayName={'Buybot example'} />
+                  <ArrowLinkComponent href={'/'} displayName={'Video example'} />
+                  <ArrowLinkComponent href={'/'} displayName={'Logo example'} />
                 </span>
               </div>
             </li>
-            <li>
-              <span>
-                <img className={styles.icons} src={Crosshair} alt="star" />
-              </span>
-              <div>
-                <h2>
-                  <p>06 / </p> Introduction
-                </h2>
-                <span>
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                  <ArrowLinkComponent href={'/'} displayName={'FAQ'} />
-                </span>
-              </div>
-            </li>
+         
           </ul>
         </div>
       </main>
@@ -145,8 +151,7 @@ const Developers: React.FC = () => {
               Solve Technical Questions quickly
             </h2>
             <p className={'font-RobotoMono xl:px-[100px] md:text-base text-sm'}>
-              DISCORD DEVELOPER COMMUNITY SPANS ALL ACROSS THE GLOBE. SHARE YOUR IDEAS, AND BUILD
-              WITHOUT LIMITS.
+            Join our Discord community today to receive fast help from our users 
             </p>
           </div>
 
