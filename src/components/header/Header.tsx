@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link'
 
 const routes: { name: string; path: string }[] = [
   { name: 'HOME', path: '/' },
-  { name: 'TEAM', path: 'https://doc.doge-gpt.ai/doge-gpt/team-and-advisors' },
+  { name: 'TEAM', path: 'https://doc.doge-gpt.ai/doge-gpt/team-and-advisors', external: true },
   { name: 'COMMUNITY', path: '/#community' },
   { name: 'DOGEGPT', path: 'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite' },
   { name: 'dApp (coming soon)', path: '' }
