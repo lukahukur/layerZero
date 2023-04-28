@@ -3,11 +3,15 @@ import { useState } from 'react'
 import Logo from '../../assets/logo.png'
 import { HashLink } from 'react-router-hash-link'
 
-const routes: { name: string; path: string }[] = [
+const routes: { name: string; path: string; target?: '_blank' }[] = [
   { name: 'HOME', path: '/' },
-  { name: 'TEAM', path: 'https://doc.doge-gpt.ai/doge-gpt/team-and-advisors' },
+  { name: 'TEAM', path: 'https://doc.doge-gpt.ai/doge-gpt/team-and-advisors', target: '_blank' },
   { name: 'COMMUNITY', path: '/#community' },
-  { name: 'DOGEGPT', path: 'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite' },
+  {
+    name: 'DOGEGPT',
+    path: 'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite',
+    target: '_blank'
+  },
   { name: 'dApp (coming soon)', path: '' }
 ]
 
@@ -34,6 +38,7 @@ const Header = () => {
       }
       return (
         <Link
+          target={e.target && e.target}
           key={i}
           onClick={() => setDropDownState(false)}
           className={underlineCurrentLink(e.path) + 'underline_link'}
