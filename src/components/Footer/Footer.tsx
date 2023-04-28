@@ -11,7 +11,7 @@ const links: { name: string; link: string }[] = [
   { name: 'TELEGRAM', link: 'https://t.me/gptdoge' },
   { name: 'Discord', link: '/' },
   { name: 'Twitter', link: 'https://Twitter.com/dogegptai' },
-  { name: 'Medium', link: 'https://Medium.com/@dogegptai', target: '_blank' },
+  { name: 'Medium', link: 'https://Medium.com/@dogegptai' },
   { name: 'DogeGPT', link: '/' },
   { name: 'Developers', link: '/developers' },
   { name: 'About', link: '/' }
