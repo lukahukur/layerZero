@@ -59,7 +59,7 @@ const Header = () => {
       </Link>
 
       <nav
-        className={`transition duration-200 all w-full flex items-center xl:items-start mt-[690px] -ml-[40px] md:-ml-[80px] xl:ml-0 ${
+        className={`transition duration-200 all w-full flex items-center xl:items-start mt-[690px] -ml-[40px] md:-ml-[80px] xl:ml-0 -ml-[29px] ${
           showDropDown ? 'h-[110vh] opacity-100' : 'opacity-0'
         } xl:flex xl:mt-0 xl:h-full xl:opacity-100 xl:static fixed w-full xl:justify-center xl:bg-transparent bg-black`}>
         <div
