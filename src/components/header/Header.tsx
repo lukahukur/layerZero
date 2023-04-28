@@ -9,7 +9,8 @@ const routes: { name: string; path: string; target?: '_blank' }[] = [
   { name: 'COMMUNITY', path: '/#community' },
   {
     name: 'DOGEGPT',
-    path: 'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite',target: '_blank'
+    path: 'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite',
+    target: '_blank'
   },
   { name: 'dApp (coming soon)', path: '' }
 ]
@@ -51,10 +52,12 @@ const Header = () => {
       className={
         'text-white flex items-center font-RobotoMono justify-start p-7 md:pl-20 sm:pl-10 text-sm '
       }>
+      <div className={'text-white min-w-[140px] h-0'}></div>
       <Link to={'/'} className={'font-light flex items-center text-[18px] font-Roboto fixed z-10'}>
         <img width={'35px'} src={Logo} alt={'logo'} />
         <p className={'font-[400] font-RobotoMono'}>&nbsp;DogeGPT</p>
       </Link>
+
       <nav
         className={`transition duration-200 all w-full flex items-center xl:items-start mt-[690px] -ml-[40px] md:-ml-[80px] xl:ml-0 ${
           showDropDown ? 'h-[110vh] opacity-100' : 'opacity-0'
