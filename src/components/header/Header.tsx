@@ -9,8 +9,7 @@ const routes: { name: string; path: string; target?: '_blank' }[] = [
   { name: 'COMMUNITY', path: '/#community' },
   {
     name: 'DOGEGPT',
-    path: 'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite',
-    target: '_blank'
+    path: 'https://doc.doge-gpt.ai/doge-gpt/dogegpt-content-creation-suite',target: '_blank'
   },
   { name: 'dApp (coming soon)', path: '' }
 ]

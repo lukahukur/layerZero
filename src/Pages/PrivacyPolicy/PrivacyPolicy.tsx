@@ -18,138 +18,40 @@ export const PrivacyPolicy: React.FC = () => {
         <section className={'flex flex-col xl:items-end items-start'}>
           <section className={styles.section}>
             <div>
-              <h2>Introduction</h2>
-              <p>
-                LayerZero Labs Ltd. (“LayerZero”) is committed to protecting and respecting your
-                privacy. This Privacy Policy describes how your personal or behavioral data is
-                collected, used and stored when you access https://layerzero.network/ (the “Site”).
-                This Privacy Policy may be modified from time to time which will be indicated by
-                changing the date at the top of this page. Your use of the Site is at all times
-                subject to the Terms of Service, which incorporates this Privacy Policy.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>Acceptance of the Privacy Policy</h2>
-              <p>
-                By accessing the Site, you signify acceptance to the terms of this Privacy Policy.
-                Where required by law, you will be asked for your consent to the collection and use
-                of your information as described further below. Additional "just-in-time"
-                disclosures or information about the data processing practices of specific services
-                may be provided. These notices may supplement or clarify the privacy practices
-                applicable to the Site or may provide you with additional choices about how your
-                data is processed. If you do not agree with or you are not comfortable with any
-                aspect of this Privacy Policy, you should immediately discontinue access or use of
-                the Site. You may only access the Site if you are above the age of majority in your
-                jurisdiction of residence.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>The Information We Collect</h2>
-              <p>
-                LayerZero does not collect your personal information and does not use any automatic
-                tracking technologies. LayerZero does not collect personal information. You are not
-                required to provide any personal information to the Site. However, the transactions
-                conducted from your wallets are publicly accessible on blockchain networks access
-                through the Site. LayerZero does not track IP addresses. Where third parties collect
-                IP addresses by default: (1) manual removal of IP tracking is requested, and (2) IP
-                data is anonymization to prevent product analytics services from receiving IP data.
-                Google analytics is used on the Site. LayerZero uses Google Analytics for purposes
-                of monitoring action on the Site. All IP addresses are anonymized. LayerZero does
-                not store message data. LayerZero does not store personal or message information or
-                in any way use information to associate or cross-associate wallet data is not
-                possible. Do Not Track policy. Some Internet browsers include the ability to
-                transmit "Do Not Track" or "DNT" signals. Since uniform standards for "DNT" signals
-                have not been adopted, the Site does not currently process or respond to "DNT"
-                signals.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>Use USAGE DATA</h2>
-              <p>
-                LayerZero collects anonymous usage information to improve the UX. To protect your
-                privacy, we collect no personal information and collect as little use information as
-                possible.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>Sharing of the Personal Information</h2>
-              <p>
-                We do not share or sell the personal information that you provide us with other
-                organizations without your express consent, except as described in this Privacy
-                Policy.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>How we Protect and Store Information</h2>
-              <p>
-                The safety and security of your personal information also depends on you.
-                Unauthorized entry or use, hardware or software failure, and other factors, may
-                compromise the security of user information at any time. We seek to protect personal
-                information by refraining from collecting personal information where possible.
-                However, these measures do not guarantee that your personal information will not be
-                accessed, disclosed, altered or destroyed by breach of such firewalls and secure
-                server software. By using the Site, you acknowledge that you understand and agree to
-                assume these risks.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>International Transfers OF PERSONAL DATA</h2>
-              <p>
-                If you are a resident of the European Economic Area (“EEA”) or Switzerland, you may
-                have additional rights under the General Data Protection Regulation (the “GDPR”) and
-                other applicable law with respect to your Personal Data, as outlined below. For this
-                section, we use the terms “Personal Data” and “processing” as they are defined in
-                the GDPR, but “Personal Data” generally means information that can be used to
-                individually identify a person, and “processing” generally covers actions that can
-                be performed in connection with data such as collection, use, storage and
-                disclosure. LayerZero will be the controller of your Personal Data processed in
-                connection with the Site.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>Social Media</h2>
-              <p>
-                We use social and developer networks such as Discord, Twitter, Gitbook and Github.
-                When you use them, the operators of the respective social and developer networks and
-                may record that you are on such networks. This processing of your personal data lays
-                in the responsibility of these networks and occurs according to their privacy
-                policy. Please check with these individual social and developer networks regarding
-                their privacy policies. LayerZero is not responsible for data collected by these
-                networks. We only use these platforms to inform our community of updates and answer
-                user questions.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>What Personal Data Do We Collect from You?</h2>
-              <p>
-                We collect no personal data from you. Please see the section “The Information We
-                Collect” for further details.
-              </p>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div>
-              <h2>What If You Have Questions Regarding Your Personal Data?</h2>
-              <p>
-                If you have any questions about this section or our data practices generally, please
-                contact notices@layerzero.network.
-              </p>
+            <h2>Welcome to DogeGPT</h2>
+<p>A content creation platform designed for the DeFi community. This privacy policy explains how we collect, use, and protect your personal information when you use our platform. By accessing or using our platform, you agree to the collection and use of your personal information as described in this privacy policy.</p>
+<h2>Information We Collect</h2>
+<p>We collect the following types of information:</p>
+<ul>
+    <li><strong>Personal Information:</strong> We may collect personal information such as your name, email address, and billing information when you register for our platform or make a purchase.</li>
+    <li><strong>Usage Information:</strong> We may collect information about your use of our platform, including your IP address, browser type, device type, and operating system.</li>
+    <li><strong>Cookies:</strong> We may use cookies to track your preferences and activities on our platform. You can disable cookies in your browser settings, but this may limit your use of some features of our platform.</li>
+    <li><strong>Third-Party Analytics:</strong> We may use third-party analytics tools, such as Google Analytics, to collect information about your use of our platform.</li>
+</ul>
+<h2>How We Use Your Information</h2>
+<p>We use your information for the following purposes:</p>
+<ul>
+    <li>To provide and improve our platform and services</li>
+    <li>To communicate with you about your account, orders, and support requests</li>
+    <li>To personalize your experience on our platform</li>
+    <li>To analyze trends and usage patterns on our platform</li>
+    <li>To comply with legal and regulatory requirements</li>
+</ul>
+<h2>How We Protect Your Information</h2>
+<p>We take reasonable measures to protect your personal information from unauthorized access, disclosure, or destruction. However, no data transmission over the internet or storage system can be guaranteed to be 100% secure.</p>
+<h2>Sharing Your Information</h2>
+<p>We do not sell, trade, or otherwise transfer your personal information to outside parties unless we provide you with advance notice and obtain your consent. We may share your information with third-party service providers who help us operate our platform or provide services to you.</p>
+<h2>Your Choices</h2>
+<p>You have the following choices regarding your personal information:</p>
+<ul>
+    <li>You can review and edit your personal information at any time by logging into your account on our platform.</li>
+    <li>You can opt-out of receiving promotional emails from us by following the unsubscribe link in the email.</li>
+    <li>You can request that we delete your personal information by contacting us at [Insert contact information]. Please note that we may be required to retain certain information for legal or regulatory purposes.</li>
+</ul>
+<h2>Changes to this Privacy Policy</h2>
+<p>We may update this privacy policy from time to time by posting a new version on our platform. You should check this page occasionally to ensure that you are aware of any changes.</p>
+<h2>Contact Us</h2>
+<p>If you have any questions or concerns about this privacy policy, please contact us at <a href="mailto:support@doge-gpt.ai">support@doge-gpt.ai</a>.</p>
             </div>
           </section>
         </section>
