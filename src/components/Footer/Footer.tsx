@@ -23,7 +23,7 @@ const Footer = () => {
         <nav>
           <ul>
             {links.map((e, i) => (
-              <Link to={e.link} key={i}>
+              <Link to={e.link} key={i} target={'_blank'}>
                 {'</A>'}
                 {e.name}
               </Link>
@@ -86,7 +86,6 @@ const Footer = () => {
             <div>
               <HashLink to={'/privacy-policy#'}>Privacy Policy</HashLink>
             </div>
-            
           </div>
         </div>
         <div className={'h-32 w-[85%] flex justify-between items-center text-sm'}>
@@ -96,9 +95,8 @@ const Footer = () => {
           <div>
             <img src={Msg} alt={'message icon'} />
             <a href="mailto:support@doge-gpt.ai">
-  <p>Contact Us</p>
-</a>
-
+              <p>Contact Us</p>
+            </a>
           </div>
           <div>
             <img src={Logo} alt="Logo" />
