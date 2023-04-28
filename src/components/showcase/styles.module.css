@@ -15,12 +15,6 @@
   font-family: "Inter", sans-serif;
   @apply text-neutral-600 xl:text-[20px] text-[18px] mr-10;
 }
-.section li:hover {
-  @apply h-[200px] justify-start;
-}
-.section li:hover section {
-  @apply block w-full h-full  p-5;
-}
 .section section {
   @apply hidden;
 }
