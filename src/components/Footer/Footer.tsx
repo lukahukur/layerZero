@@ -9,7 +9,7 @@ import { HashLink } from 'react-router-hash-link'
 
 const links: { name: string; link: string }[] = [
   { name: 'TELEGRAM', link: 'https://t.me/gptdoge' },
-  { name: 'Discord', link: '/' },
+  { name: 'Discord', link: 'https://discord.gg/ABC3eQjbf8' },
   { name: 'Twitter', link: 'https://Twitter.com/dogegptai' },
   { name: 'Medium', link: 'https://Medium.com/@dogegptai' },
   { name: 'DogeGPT', link: '/' },
